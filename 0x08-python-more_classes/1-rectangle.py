@@ -29,7 +29,7 @@ class Rectangle:
         Returns:
             int: The height of this Rectangle.
         """
-        return slf.__height
+        return self.__height
 
     @width.setter
     def width(self, value):
