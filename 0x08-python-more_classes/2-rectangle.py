@@ -4,7 +4,7 @@
 
 
 class Rectangle:
-    """Represents a 2D polygon with 4 perpendicular sides.
+    """Represents a 2D Polygon with 4 perpendicular sides.
     """
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle with a given width and height.
@@ -19,21 +19,21 @@ class Rectangle:
     def width(self):
         """Retrieves the width of this Rectangle.
         Returns:
-            int: The width of this Rectangle
+            int: The width of this Rectangle.
         """
         return self.__width
 
     @property
     def height(self):
-        """Retrieves the height of this rectangle.
+        """Retrieves the height of this Rectangle.
         Returns:
-            int: The height of thus Rectangle.
+            int: The height of this Rectangle.
         """
         return self.__height
 
     @width.setter
     def width(self, value):
-        """updates the width of this Rectangle.
+        """Updates the width of this Rectangle.
         Args:
             value (int): The new width of this Rectangle.
         """
@@ -46,9 +46,9 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """updates the height of this rectangle.
+        """Updates the height of this Rectangle.
         Args:
-            value (int): The new height of this rectangle
+            value (int): The new height of this Rectangle.
         """
         if not isinstance(value, int):
             raise TypeError('height must be an integer')
@@ -58,17 +58,17 @@ class Rectangle:
             self.__height = value
 
     def area(self):
-        """Computes the area of this rectangle.
+        '''Computes the area of this Rectangle.
         Returns:
             int: The area of this Rectangle.
-        """
+        '''
         return self.width * self.height
 
     def perimeter(self):
-        """Computes the perimeter of this Rectangle.
+        '''Computes the perimeter of this Rectangle.
         Returns:
-            int: The perimeter of this rectangle
-        """
+            int: The perimeter of this Rectangle.
+        '''
         if self.width == 0 or self.height == 0:
             return 0
         else:

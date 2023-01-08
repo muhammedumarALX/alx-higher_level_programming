@@ -6,6 +6,9 @@
 class Rectangle:
     """Represents a 2D Polygon with 4 perpendicular sides.
     """
+    number_of_instances = 0
+    print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle with a given width and height.
         Args:
@@ -14,6 +17,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -82,7 +86,21 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ''
         else:
-            res = list(map(
-                lambda x: '#' * self.width + '\n' * (x != self.height - 1),
-                range(self.height)))
-            return ''.join(res)
+            s = str(self.print_symbol)
+            w = self.width
+            h = self.height
+            res = map(lambda x: (s * w) + ('\n' * (x != h - 1)), range(h))
+            return ''.join(list(res))
+
+    def __repr__(self):
+        '''Returns a representation of this Rectangle's initialization.
+        Returns:
+            str: A string representation of this Rectangle's initialization.
+        '''
+        return 'Rectangle({:d}, {:d})'.format(self.width, self.height)
+
+    def __del__(self):
+        '''Performs some routines after an object is deleted.
+        '''
+        print('Bye rectangle...')
+        Rectangle.number_of_instances -= 1

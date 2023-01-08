@@ -4,6 +4,6 @@
 
 
 class Rectangle:
-    """a 2D polygon with 4 perpendicular sides.
+    """A 2D polygon with 4 perpendicular sides.
     """
     pass
