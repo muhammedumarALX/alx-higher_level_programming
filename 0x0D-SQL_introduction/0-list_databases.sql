@@ -1,2 +1,2 @@
---Lisit to show all databases
+--Lisit to show all databases:
 SHOW DATABASES;
