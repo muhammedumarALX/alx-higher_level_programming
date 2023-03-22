@@ -22,7 +22,7 @@ if __name__ == "__main__":
     # print the State objects in the format specified
     if state is None:
         print("Nothing")
-    else
-    print("{}: {}".format(state.id, state.name))
+    else:
+        print("{}: {}".format(state.id, state.name))
 
     session.close()
