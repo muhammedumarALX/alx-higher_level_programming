@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""python file that contains the class definition of a State
-    and an instance Base"""
+""" Defines a State class
+    Inherits from SQLAlchemy Base and links to the MySQL table states
+"""
 
 from sqlalchemy import Column, Integer, String
 from mysqlalchemy.ext.declarative import declarative_base
