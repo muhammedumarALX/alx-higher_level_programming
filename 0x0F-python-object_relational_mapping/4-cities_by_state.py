@@ -9,7 +9,7 @@ if __name__ == "__main__":
     cur.execute("SELECT c.id,, c.name, s.name FROM cities as c\
                  inner join states as s\
                  ON c.state_id = s.id")
-    cities = cursor.fetchall()
+    cities = cur.fetchall()
 
     for city in cities:
         print(ctiy)
