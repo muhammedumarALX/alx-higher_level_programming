@@ -11,7 +11,7 @@ if __name__ == "__main__":
     cities = cur.fetchall()
 
     for city in cities:
-        print(ctiy)
+        print(city)
 
     cur.close()
     db.close()
