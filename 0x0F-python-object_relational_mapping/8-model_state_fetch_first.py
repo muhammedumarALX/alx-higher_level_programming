@@ -17,7 +17,7 @@ if __name__ == "__main__":
     session = Session()
 
     # Query all Stat objects from the database and order by states.id
-    states = session.query(State).order_by(State.id).first()
+    state = session.query(State).order_by(State.id).first()
 
     # print the State objects in the format specified
     if state is None:
