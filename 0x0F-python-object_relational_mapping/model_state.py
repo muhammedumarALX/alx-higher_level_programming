@@ -4,7 +4,7 @@
 """
 
 from sqlalchemy import Column, Integer, String
-from mysqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
@@ -17,7 +17,7 @@ class State(Base):
     name (sqlalchemy.String): The state's name.
     """
 
-    __table__ = "states"
+    __tablename__ = "states"
     id = Column(Integer(), primary_key=True,
-                autoincrement=True, unique=true, nullable=False)
+                autoincrement=True, unique=True, nullable=False)
     name = Column(String(128), nullable=False)
