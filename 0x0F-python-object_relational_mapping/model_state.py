@@ -2,8 +2,8 @@
 """python file that contains the class definition of a State
     and an instance Base"""
 
-from mysqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
+from mysqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
