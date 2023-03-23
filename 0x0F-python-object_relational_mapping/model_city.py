@@ -1,4 +1,4 @@
-#!/urs/bin/python3
+#!/usr/bin/python3
 from sqlalchemy import Column, Integer, ForeignKey
 from sqlalchemy.orm import relationship
 from model_state import Base
