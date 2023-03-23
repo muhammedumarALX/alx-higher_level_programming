@@ -17,7 +17,7 @@ if __name__ == "__main__":
     session = Session()
 
     # Query all Stat objects from the database and order by states.id
-    state_delete = session.query(State).filter(State.name.like("%a%").all()
+    state_delete = session.query(State).filter(State.name.like("%a%")).all()
 
     # delete
     session.delete(state_delete)
