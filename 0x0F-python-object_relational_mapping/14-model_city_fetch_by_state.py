@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""script that lists all State objects from the database hbtn_0e_6_usa"""
+'''
+    Prints all City objects from the database hbtn_0e_14_usa
+'''
 from sqlalchemy import create_engine
 import sys
 from model_state import Base, State
