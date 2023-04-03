@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Check if an argument is empty or Not
 if [ $# -eq 0 ]; then
   echo "Error: no URL provided"
