@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""Script that fetches a url"""
+"""Script that fetches a url using urllib"""
 import urllib.request
 
 
 if __name__ == "__main__":
-    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status')
+    url = 'https://alx-intranet.hbtn.io/status'
+    with urllib.request.urlopen(url)
     as response:
         html = response.read()
     print("Body response: ")
