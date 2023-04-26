@@ -7,10 +7,4 @@ const filePath = process.argv[2];
 const stringToWrite = process.argv[3];
 
 // write the string to the file in utf-8
-fs.writeFile(filePath, stringToWrite, 'utf-8', (err) => {
-  if (err) {
-    console.error(err);
-  } else {
-    console.log(`Successfully wrote ${stringToWrite.length} characters to ${filePath}`);
-  }
-});
+fs.writeFileSync(filePath, stringToWrite);
