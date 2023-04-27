@@ -8,6 +8,6 @@ const url = process.argv[2];
 
 request(url, function (err, res) {
   if (err == null) {
-     console.log('code: ' + res.statusCode);
+    console.log('code: ' + res.statusCode);
   }
 });
